@@ -41,10 +41,10 @@ static int		check_builtins(char **tab, t_env *environ)
 	else if (!ft_strcmp(tab[0], "env"))
 		print_env(environ->env);
 	else if (!ft_strcmp(tab[0], "cd"))
-		ft_cd(tab, environ); //OLDPWD TO CHECK
+		ft_cd(tab, environ);
 	else if (!ft_strcmp(tab[0], "setenv") && tab[1] && tab[2])
 		environ->env = ft_setenv(tab[1], tab[2], environ->env);
-	else if (!ft_strcmp(tab[0], "unsetenv") && tab[1] && tab[2])
+	else if (!ft_strcmp(tab[0], "unsetenv") && tab[1])
 		environ->env = ft_unsetenv(tab[1], environ->env);
 	else if (!ft_strcmp(tab[0], "echo"))
 		ft_echo(tab);

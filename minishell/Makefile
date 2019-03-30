@@ -31,6 +31,8 @@ CC = clang
 
 CFLAGS = -I includes -I libft/includes -Wall -Wextra -Werror -g3
 
+LIB = libft/libft.a
+
 OBJ_PATH = .obj
 
 OBJ_NAME = $(SRC_NAME:%.c=%.o)
@@ -39,7 +41,10 @@ OBJ_NAME = $(SRC_NAME:%.c=%.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
+$(LIB) :
+	-@make -C libft/ > /dev/null || true
+
+$(NAME): $(LIB) $(OBJ)
 	@$(CC) $(OBJ) libft/libft.a -o $(NAME)
 
 $(OBJ): includes/minishell.h
