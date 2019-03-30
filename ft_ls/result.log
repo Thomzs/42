@@ -1,0 +1,1430 @@
+-r--------    .CFUserTextEncoding
+-rw-r--r--@    .DS_Store
+drwx------    .Trash
+-rw-------    .bash_history
+drwxr-xr-x    .oh-my-zsh
+drwxr-xr-x    .subversion
+drwxr-xr-x    .vim
+-rw-------    .viminfo
+-rw-r--r--    .vimrc
+-rw-r--r--    .zcompdump-FREDSMBP2-5.3
+-rw-------    .zsh_history
+-rw-r--r--    .zshrc
+drwxr-xr-x    42FileChecker
+drwx------@    Applications
+drwx------    Desktop
+drwx------    Documents
+drwx------    Downloads
+drwx------@    Library
+drwx------    Movies
+drwx------    Music
+drwx------    Pictures
+drwxr-xr-x    Public
+drwxr-xr-x    perso
+drwxr-xr-x    valgrind
+drwxr-xr-x    work
+
+/Users/tmeyer/.Trash:
+
+/Users/tmeyer/.oh-my-zsh:
+drwxr-xr-x    .git
+-rw-r--r--    .gitignore
+-rw-r--r--    CONTRIBUTING.md
+-rw-r--r--    LICENSE.txt
+-rw-r--r--    README.md
+drwxr-xr-x    cache
+drwxr-xr-x    custom
+drwxr-xr-x    lib
+drwxr-xr-x    log
+-rw-r--r--    oh-my-zsh.sh
+drwxr-xr-x    plugins
+drwxr-xr-x    templates
+drwxr-xr-x    themes
+drwxr-xr-x    tools
+
+/Users/tmeyer/.oh-my-zsh/.git:
+-rw-r--r--    HEAD
+-rw-r--r--    config
+-rw-r--r--    description
+drwxr-xr-x    hooks
+-rw-r--r--    index
+drwxr-xr-x    info
+drwxr-xr-x    logs
+drwxr-xr-x    objects
+-rw-r--r--    packed-refs
+drwxr-xr-x    refs
+-rw-r--r--    shallow
+
+/Users/tmeyer/.oh-my-zsh/.git/hooks:
+-rwxr-xr-x    applypatch-msg.sample
+-rwxr-xr-x    commit-msg.sample
+-rwxr-xr-x    fsmonitor-watchman.sample
+-rwxr-xr-x    post-update.sample
+-rwxr-xr-x    pre-applypatch.sample
+-rwxr-xr-x    pre-commit.sample
+-rwxr-xr-x    pre-push.sample
+-rwxr-xr-x    pre-rebase.sample
+-rwxr-xr-x    pre-receive.sample
+-rwxr-xr-x    prepare-commit-msg.sample
+-rwxr-xr-x    update.sample
+
+/Users/tmeyer/.oh-my-zsh/.git/info:
+-rw-r--r--    exclude
+
+/Users/tmeyer/.oh-my-zsh/.git/logs:
+-rw-r--r--    HEAD
+drwxr-xr-x    refs
+
+/Users/tmeyer/.oh-my-zsh/.git/logs/refs:
+drwxr-xr-x    heads
+drwxr-xr-x    remotes
+
+/Users/tmeyer/.oh-my-zsh/.git/logs/refs/heads:
+-rw-r--r--    master
+
+/Users/tmeyer/.oh-my-zsh/.git/logs/refs/remotes:
+drwxr-xr-x    origin
+
+/Users/tmeyer/.oh-my-zsh/.git/logs/refs/remotes/origin:
+-rw-r--r--    HEAD
+
+/Users/tmeyer/.oh-my-zsh/.git/objects:
+drwxr-xr-x    info
+drwxr-xr-x    pack
+
+/Users/tmeyer/.oh-my-zsh/.git/objects/info:
+
+/Users/tmeyer/.oh-my-zsh/.git/objects/pack:
+-r--r--r--    pack-c9ee8101454f19ff9d2491e7daec408e7b008a9c.idx
+-r--r--r--    pack-c9ee8101454f19ff9d2491e7daec408e7b008a9c.pack
+
+/Users/tmeyer/.oh-my-zsh/.git/refs:
+drwxr-xr-x    heads
+drwxr-xr-x    remotes
+drwxr-xr-x    tags
+
+/Users/tmeyer/.oh-my-zsh/.git/refs/heads:
+-rw-r--r--    master
+
+/Users/tmeyer/.oh-my-zsh/.git/refs/remotes:
+drwxr-xr-x    origin
+
+/Users/tmeyer/.oh-my-zsh/.git/refs/remotes/origin:
+-rw-r--r--    HEAD
+
+/Users/tmeyer/.oh-my-zsh/.git/refs/tags:
+
+/Users/tmeyer/.oh-my-zsh/cache:
+
+/Users/tmeyer/.oh-my-zsh/custom:
+-rw-r--r--    example.zsh
+drwxr-xr-x    plugins
+drwxr-xr-x    themes
+
+/Users/tmeyer/.oh-my-zsh/custom/plugins:
+drwxr-xr-x    example
+
+/Users/tmeyer/.oh-my-zsh/custom/plugins/example:
+-rw-r--r--    example.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/custom/themes:
+-rw-r--r--    example.zsh-theme
+
+/Users/tmeyer/.oh-my-zsh/lib:
+-rw-r--r--    bzr.zsh
+-rw-r--r--    clipboard.zsh
+-rw-r--r--    compfix.zsh
+-rw-r--r--    completion.zsh
+-rw-r--r--    correction.zsh
+-rw-r--r--    diagnostics.zsh
+-rw-r--r--    directories.zsh
+-rw-r--r--    functions.zsh
+-rw-r--r--    git.zsh
+-rw-r--r--    grep.zsh
+-rw-r--r--    history.zsh
+-rw-r--r--    key-bindings.zsh
+-rw-r--r--    misc.zsh
+-rw-r--r--    nvm.zsh
+-rw-r--r--    prompt_info_functions.zsh
+-rw-r--r--    spectrum.zsh
+-rw-r--r--    termsupport.zsh
+-rw-r--r--    theme-and-appearance.zsh
+
+/Users/tmeyer/.oh-my-zsh/log:
+-rw-r--r--    .gitkeep
+drwxr-xr-x    update.lock
+
+/Users/tmeyer/.oh-my-zsh/log/update.lock:
+
+/Users/tmeyer/.oh-my-zsh/plugins:
+drwxr-xr-x    adb
+drwxr-xr-x    ant
+drwxr-xr-x    apache2-macports
+drwxr-xr-x    arcanist
+drwxr-xr-x    archlinux
+drwxr-xr-x    asdf
+drwxr-xr-x    autoenv
+drwxr-xr-x    autojump
+drwxr-xr-x    autopep8
+drwxr-xr-x    aws
+drwxr-xr-x    battery
+drwxr-xr-x    bbedit
+drwxr-xr-x    bgnotify
+drwxr-xr-x    boot2docker
+drwxr-xr-x    bower
+drwxr-xr-x    branch
+drwxr-xr-x    brew
+drwxr-xr-x    bundler
+drwxr-xr-x    bwana
+drwxr-xr-x    cabal
+drwxr-xr-x    cake
+drwxr-xr-x    cakephp3
+drwxr-xr-x    capistrano
+drwxr-xr-x    cargo
+drwxr-xr-x    cask
+drwxr-xr-x    catimg
+drwxr-xr-x    celery
+drwxr-xr-x    chruby
+drwxr-xr-x    chucknorris
+drwxr-xr-x    cloudapp
+drwxr-xr-x    cloudfoundry
+drwxr-xr-x    codeclimate
+drwxr-xr-x    coffee
+drwxr-xr-x    colemak
+drwxr-xr-x    colored-man-pages
+drwxr-xr-x    colorize
+drwxr-xr-x    command-not-found
+drwxr-xr-x    common-aliases
+drwxr-xr-x    compleat
+drwxr-xr-x    composer
+drwxr-xr-x    copybuffer
+drwxr-xr-x    copydir
+drwxr-xr-x    copyfile
+drwxr-xr-x    cp
+drwxr-xr-x    cpanm
+drwxr-xr-x    dash
+drwxr-xr-x    debian
+drwxr-xr-x    dircycle
+drwxr-xr-x    dirhistory
+drwxr-xr-x    dirpersist
+drwxr-xr-x    django
+drwxr-xr-x    dnf
+drwxr-xr-x    docker
+drwxr-xr-x    docker-compose
+drwxr-xr-x    docker-machine
+drwxr-xr-x    doctl
+drwxr-xr-x    dotenv
+drwxr-xr-x    droplr
+drwxr-xr-x    eecms
+drwxr-xr-x    emacs
+drwxr-xr-x    ember-cli
+drwxr-xr-x    emoji
+drwxr-xr-x    emoji-clock
+drwxr-xr-x    emotty
+drwxr-xr-x    encode64
+drwxr-xr-x    extract
+drwxr-xr-x    fabric
+drwxr-xr-x    fancy-ctrl-z
+drwxr-xr-x    fasd
+drwxr-xr-x    fastfile
+drwxr-xr-x    fbterm
+drwxr-xr-x    fedora
+drwxr-xr-x    firewalld
+drwxr-xr-x    forklift
+drwxr-xr-x    fossil
+drwxr-xr-x    frontend-search
+drwxr-xr-x    fzf
+drwxr-xr-x    gas
+drwxr-xr-x    gb
+drwxr-xr-x    geeknote
+drwxr-xr-x    gem
+drwxr-xr-x    git
+drwxr-xr-x    git-auto-fetch
+drwxr-xr-x    git-extras
+drwxr-xr-x    git-flow
+drwxr-xr-x    git-flow-avh
+drwxr-xr-x    git-hubflow
+drwxr-xr-x    git-prompt
+drwxr-xr-x    git-remote-branch
+drwxr-xr-x    gitfast
+drwxr-xr-x    github
+drwxr-xr-x    gitignore
+drwxr-xr-x    glassfish
+drwxr-xr-x    globalias
+drwxr-xr-x    gnu-utils
+drwxr-xr-x    go
+drwxr-xr-x    golang
+drwxr-xr-x    gpg-agent
+drwxr-xr-x    gradle
+drwxr-xr-x    grails
+drwxr-xr-x    grunt
+drwxr-xr-x    gulp
+drwxr-xr-x    hanami
+drwxr-xr-x    helm
+drwxr-xr-x    heroku
+drwxr-xr-x    history
+drwxr-xr-x    history-substring-search
+drwxr-xr-x    homestead
+drwxr-xr-x    httpie
+drwxr-xr-x    iterm2
+drwxr-xr-x    iwhois
+drwxr-xr-x    jake-node
+drwxr-xr-x    jenv
+drwxr-xr-x    jhbuild
+drwxr-xr-x    jira
+drwxr-xr-x    jruby
+drwxr-xr-x    jsontools
+drwxr-xr-x    jump
+drwxr-xr-x    kate
+drwxr-xr-x    kitchen
+drwxr-xr-x    knife
+drwxr-xr-x    knife_ssh
+drwxr-xr-x    kops
+drwxr-xr-x    kube-ps1
+drwxr-xr-x    kubectl
+drwxr-xr-x    laravel
+drwxr-xr-x    laravel4
+drwxr-xr-x    laravel5
+drwxr-xr-x    last-working-dir
+drwxr-xr-x    lein
+drwxr-xr-x    lighthouse
+drwxr-xr-x    lol
+drwxr-xr-x    macports
+drwxr-xr-x    magic-enter
+drwxr-xr-x    man
+drwxr-xr-x    marked2
+drwxr-xr-x    mercurial
+drwxr-xr-x    meteor
+drwxr-xr-x    minikube
+drwxr-xr-x    mix
+drwxr-xr-x    mix-fast
+drwxr-xr-x    mosh
+drwxr-xr-x    mvn
+drwxr-xr-x    mysql-macports
+drwxr-xr-x    n98-magerun
+drwxr-xr-x    nanoc
+drwxr-xr-x    ng
+drwxr-xr-x    nmap
+drwxr-xr-x    node
+drwxr-xr-x    nomad
+drwxr-xr-x    npm
+drwxr-xr-x    npx
+drwxr-xr-x    nvm
+drwxr-xr-x    nyan
+drwxr-xr-x    oc
+drwxr-xr-x    osx
+drwxr-xr-x    pass
+drwxr-xr-x    paver
+drwxr-xr-x    pep8
+drwxr-xr-x    per-directory-history
+drwxr-xr-x    percol
+drwxr-xr-x    perl
+drwxr-xr-x    perms
+drwxr-xr-x    phing
+drwxr-xr-x    pip
+drwxr-xr-x    pj
+drwxr-xr-x    pod
+drwxr-xr-x    postgres
+drwxr-xr-x    pow
+drwxr-xr-x    powder
+drwxr-xr-x    powify
+drwxr-xr-x    profiles
+drwxr-xr-x    pyenv
+drwxr-xr-x    pylint
+drwxr-xr-x    python
+drwxr-xr-x    rails
+drwxr-xr-x    rake
+drwxr-xr-x    rake-fast
+drwxr-xr-x    rand-quote
+drwxr-xr-x    rbenv
+drwxr-xr-x    rbfu
+drwxr-xr-x    react-native
+drwxr-xr-x    rebar
+drwxr-xr-x    redis-cli
+drwxr-xr-x    repo
+drwxr-xr-x    rsync
+drwxr-xr-x    ruby
+drwxr-xr-x    rust
+drwxr-xr-x    rvm
+drwxr-xr-x    safe-paste
+drwxr-xr-x    salt
+drwxr-xr-x    sbt
+drwxr-xr-x    scala
+drwxr-xr-x    scd
+drwxr-xr-x    screen
+drwxr-xr-x    scw
+drwxr-xr-x    sfffe
+drwxr-xr-x    shrink-path
+drwxr-xr-x    singlechar
+drwxr-xr-x    spring
+drwxr-xr-x    sprunge
+drwxr-xr-x    ssh-agent
+drwxr-xr-x    stack
+drwxr-xr-x    sublime
+drwxr-xr-x    sudo
+drwxr-xr-x    supervisor
+drwxr-xr-x    suse
+drwxr-xr-x    svn
+drwxr-xr-x    svn-fast-info
+drwxr-xr-x    swiftpm
+drwxr-xr-x    symfony
+drwxr-xr-x    symfony2
+drwxr-xr-x    systemadmin
+drwxr-xr-x    systemd
+drwxr-xr-x    taskwarrior
+drwxr-xr-x    terminalapp
+drwxr-xr-x    terminitor
+drwxr-xr-x    terraform
+drwxr-xr-x    textastic
+drwxr-xr-x    textmate
+drwxr-xr-x    thefuck
+drwxr-xr-x    themes
+drwxr-xr-x    thor
+drwxr-xr-x    tig
+drwxr-xr-x    tmux
+drwxr-xr-x    tmux-cssh
+drwxr-xr-x    tmuxinator
+drwxr-xr-x    torrent
+drwxr-xr-x    transfer
+drwxr-xr-x    tugboat
+drwxr-xr-x    ubuntu
+drwxr-xr-x    ufw
+drwxr-xr-x    urltools
+drwxr-xr-x    vagrant
+drwxr-xr-x    vagrant-prompt
+drwxr-xr-x    vault
+drwxr-xr-x    vi-mode
+drwxr-xr-x    vim-interaction
+drwxr-xr-x    virtualenv
+drwxr-xr-x    virtualenvwrapper
+drwxr-xr-x    vscode
+drwxr-xr-x    vundle
+drwxr-xr-x    wakeonlan
+drwxr-xr-x    wd
+drwxr-xr-x    web-search
+drwxr-xr-x    wp-cli
+drwxr-xr-x    xcode
+drwxr-xr-x    yarn
+drwxr-xr-x    yii
+drwxr-xr-x    yii2
+drwxr-xr-x    yum
+drwxr-xr-x    z
+drwxr-xr-x    zeus
+drwxr-xr-x    zsh-navigation-tools
+drwxr-xr-x    zsh_reload
+
+/Users/tmeyer/.oh-my-zsh/plugins/adb:
+-rw-r--r--    README.md
+-rw-r--r--    _adb
+
+/Users/tmeyer/.oh-my-zsh/plugins/ant:
+-rw-r--r--    README.md
+-rw-r--r--    ant.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/apache2-macports:
+-rw-r--r--    README.md
+-rw-r--r--    apache2-macports.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/arcanist:
+-rw-r--r--    README.md
+-rw-r--r--    arcanist.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/archlinux:
+-rw-r--r--    README.md
+-rw-r--r--    archlinux.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/asdf:
+-rw-r--r--    README.md
+-rw-r--r--    asdf.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/autoenv:
+-rw-r--r--    autoenv.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/autojump:
+-rw-r--r--    README.md
+-rw-r--r--    autojump.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/autopep8:
+-rw-r--r--    README.md
+-rw-r--r--    _autopep8
+
+/Users/tmeyer/.oh-my-zsh/plugins/aws:
+-rw-r--r--    README.md
+-rw-r--r--    aws.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/battery:
+-rw-r--r--    README.md
+-rw-r--r--    battery.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/bbedit:
+-rw-r--r--    README.md
+-rw-r--r--    bbedit.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/bgnotify:
+-rw-r--r--    README.md
+-rw-r--r--    bgnotify.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/boot2docker:
+-rw-r--r--    README.md
+-rw-r--r--    _boot2docker
+
+/Users/tmeyer/.oh-my-zsh/plugins/bower:
+-rw-r--r--    README.md
+-rw-r--r--    _bower
+-rw-r--r--    bower.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/branch:
+-rw-r--r--    README.md
+-rw-r--r--    branch.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/brew:
+-rw-r--r--    README.md
+-rw-r--r--    brew.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/bundler:
+-rw-r--r--    README.md
+-rw-r--r--    _bundler
+-rw-r--r--    bundler.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/bwana:
+-rw-r--r--    README.md
+-rw-r--r--    bwana.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/cabal:
+-rw-r--r--    README.md
+-rw-r--r--    cabal.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/cake:
+-rw-r--r--    cake.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/cakephp3:
+-rw-r--r--    cakephp3.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/capistrano:
+-rw-r--r--    README.md
+-rw-r--r--    _capistrano
+-rw-r--r--    capistrano.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/cargo:
+-rw-r--r--    README.md
+-rw-r--r--    _cargo
+
+/Users/tmeyer/.oh-my-zsh/plugins/cask:
+-rw-r--r--    README.md
+-rw-r--r--    cask.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/catimg:
+-rw-r--r--    README.md
+-rw-r--r--    catimg.plugin.zsh
+-rw-r--r--    catimg.sh
+-rw-r--r--    colors.png
+
+/Users/tmeyer/.oh-my-zsh/plugins/celery:
+-rw-r--r--    README.md
+-rw-r--r--    _celery
+
+/Users/tmeyer/.oh-my-zsh/plugins/chruby:
+-rw-r--r--    chruby.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/chucknorris:
+-rw-r--r--    .gitignore
+-rw-r--r--    README.md
+-rw-r--r--    chucknorris.plugin.zsh
+drwxr-xr-x    fortunes
+
+/Users/tmeyer/.oh-my-zsh/plugins/chucknorris/fortunes:
+-rw-r--r--    chucknorris
+
+/Users/tmeyer/.oh-my-zsh/plugins/cloudapp:
+-rw-r--r--    cloudapp.plugin.zsh
+-rwxr-xr-x    cloudapp.rb
+
+/Users/tmeyer/.oh-my-zsh/plugins/cloudfoundry:
+-rw-r--r--    README.md
+-rw-r--r--    cloudfoundry.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/codeclimate:
+-rw-r--r--    _codeclimate
+
+/Users/tmeyer/.oh-my-zsh/plugins/coffee:
+-rw-r--r--    README.md
+-rw-r--r--    _coffee
+-rw-r--r--    coffee.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/colemak:
+-rw-r--r--    colemak-less
+-rw-r--r--    colemak.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/colored-man-pages:
+-rw-r--r--    colored-man-pages.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/colorize:
+-rw-r--r--    README.md
+-rw-r--r--    colorize.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/command-not-found:
+-rw-r--r--    README.md
+-rw-r--r--    command-not-found.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/common-aliases:
+-rw-r--r--    common-aliases.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/compleat:
+-rw-r--r--    compleat.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/composer:
+-rw-r--r--    README.md
+-rw-r--r--    composer.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/copybuffer:
+-rw-r--r--    README.md
+-rw-r--r--    copybuffer.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/copydir:
+-rw-r--r--    README.md
+-rw-r--r--    copydir.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/copyfile:
+-rw-r--r--    README.md
+-rw-r--r--    copyfile.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/cp:
+-rw-r--r--    README.md
+-rw-r--r--    cp.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/cpanm:
+-rw-r--r--    README.md
+-rw-r--r--    _cpanm
+
+/Users/tmeyer/.oh-my-zsh/plugins/dash:
+-rw-r--r--    dash.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/debian:
+-rw-r--r--    debian.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/dircycle:
+-rw-r--r--    README.md
+-rw-r--r--    dircycle.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/dirhistory:
+-rw-r--r--    README.md
+-rw-r--r--    dirhistory.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/dirpersist:
+-rw-r--r--    README.md
+-rw-r--r--    dirpersist.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/django:
+-rw-r--r--    README.md
+-rw-r--r--    django.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/dnf:
+-rw-r--r--    README.md
+-rw-r--r--    dnf.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/docker:
+-rw-r--r--    README.md
+-rw-r--r--    _docker
+
+/Users/tmeyer/.oh-my-zsh/plugins/docker-compose:
+-rw-r--r--    README.md
+-rw-r--r--    _docker-compose
+-rw-r--r--    docker-compose.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/docker-machine:
+-rw-r--r--    README.md
+-rw-r--r--    _docker-machine
+-rw-r--r--    docker-machine.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/doctl:
+-rw-r--r--    README.md
+-rw-r--r--    doctl.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/dotenv:
+-rw-r--r--    README.md
+-rw-r--r--    dotenv.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/droplr:
+-rw-r--r--    README.md
+-rw-r--r--    droplr.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/eecms:
+-rw-r--r--    eecms.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/emacs:
+-rw-r--r--    README.md
+-rw-r--r--    emacs.plugin.zsh
+-rwxr-xr-x    emacsclient.sh
+
+/Users/tmeyer/.oh-my-zsh/plugins/ember-cli:
+-rw-r--r--    README.md
+-rw-r--r--    ember-cli.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/emoji:
+-rw-r--r--    README.md
+-rw-r--r--    emoji-char-definitions.zsh
+-rw-r--r--    emoji-data.txt
+-rw-r--r--    emoji.plugin.zsh
+-rw-r--r--    update_emoji.pl
+
+/Users/tmeyer/.oh-my-zsh/plugins/emoji-clock:
+-rw-r--r--    README.md
+-rw-r--r--    emoji-clock.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/emotty:
+-rw-r--r--    emotty.plugin.zsh
+-rw-r--r--    emotty_emoji_set.zsh
+-rw-r--r--    emotty_floral_set.zsh
+-rw-r--r--    emotty_love_set.zsh
+-rw-r--r--    emotty_nature_set.zsh
+-rw-r--r--    emotty_stellar_set.zsh
+-rw-r--r--    emotty_zodiac_set.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/encode64:
+-rw-r--r--    README.md
+-rw-r--r--    encode64.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/extract:
+-rw-r--r--    README.md
+-rw-r--r--    _extract
+-rw-r--r--    extract.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/fabric:
+-rw-r--r--    README.md
+-rw-r--r--    _fab
+-rw-r--r--    fabric.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/fancy-ctrl-z:
+-rw-r--r--    README.md
+-rw-r--r--    fancy-ctrl-z.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/fasd:
+-rw-r--r--    fasd.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/fastfile:
+-rw-r--r--    fastfile.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/fbterm:
+-rw-r--r--    fbterm.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/fedora:
+-rw-r--r--    README.md
+lrwxr-xr-x    fedora.plugin.zsh -> SYMLINK
+
+/Users/tmeyer/.oh-my-zsh/plugins/firewalld:
+-rw-r--r--    firewalld.plugin.zsh
+-rw-r--r--    readme.md
+
+/Users/tmeyer/.oh-my-zsh/plugins/forklift:
+-rw-r--r--    README.md
+-rw-r--r--    forklift.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/fossil:
+-rw-r--r--    README.md
+-rw-r--r--    fossil.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/frontend-search:
+-rw-r--r--    README.md
+-rw-r--r--    _frontend-search.sh
+-rw-r--r--    frontend-search.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/fzf:
+-rw-r--r--    README.md
+-rw-r--r--    fzf.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/gas:
+-rw-r--r--    _gas
+
+/Users/tmeyer/.oh-my-zsh/plugins/gb:
+-rw-r--r--    README.md
+-rw-r--r--    _gb
+
+/Users/tmeyer/.oh-my-zsh/plugins/geeknote:
+-rw-r--r--    README.md
+-rw-r--r--    _geeknote
+-rw-r--r--    geeknote.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/gem:
+-rw-r--r--    README.md
+-rw-r--r--    _gem
+-rw-r--r--    gem.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/git:
+-rw-r--r--    README.md
+-rw-r--r--    git.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/git-auto-fetch:
+-rw-r--r--    README.md
+-rw-r--r--    git-auto-fetch.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/git-extras:
+-rw-r--r--    README.md
+-rw-r--r--    git-extras.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/git-flow:
+-rw-r--r--    README.md
+-rw-r--r--    git-flow.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/git-flow-avh:
+-rw-r--r--    README.md
+-rw-r--r--    git-flow-avh.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/git-hubflow:
+-rw-r--r--    README.md
+-rw-r--r--    git-hubflow.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/git-prompt:
+-rw-r--r--    git-prompt.plugin.zsh
+-rw-r--r--    gitstatus.py
+
+/Users/tmeyer/.oh-my-zsh/plugins/git-remote-branch:
+-rw-r--r--    git-remote-branch.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/gitfast:
+-rw-r--r--    README.md
+-rw-r--r--    _git
+-rw-r--r--    git-completion.bash
+-rw-r--r--    git-prompt.sh
+-rw-r--r--    gitfast.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/github:
+-rw-r--r--    README.md
+-rw-r--r--    _hub
+-rw-r--r--    github.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/gitignore:
+-rw-r--r--    README.md
+-rw-r--r--    gitignore.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/glassfish:
+-rw-r--r--    _asadmin
+-rw-r--r--    glassfish.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/globalias:
+-rw-r--r--    README.md
+-rw-r--r--    globalias.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/gnu-utils:
+-rw-r--r--    gnu-utils.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/go:
+-rw-r--r--    README.md
+lrwxr-xr-x    go.plugin.zsh -> SYMLINK
+
+/Users/tmeyer/.oh-my-zsh/plugins/golang:
+-rw-r--r--    README.md
+-rw-r--r--    golang.plugin.zsh
+drwxr-xr-x    templates
+
+/Users/tmeyer/.oh-my-zsh/plugins/golang/templates:
+-rw-r--r--    package.txt
+-rw-r--r--    search.txt
+
+/Users/tmeyer/.oh-my-zsh/plugins/gpg-agent:
+-rw-r--r--    README.md
+-rw-r--r--    gpg-agent.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/gradle:
+-rw-r--r--    README.md
+lrwxr-xr-x    _gradle -> SYMLINK
+lrwxr-xr-x    _gradlew -> SYMLINK
+-rw-r--r--    gradle.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/grails:
+-rw-r--r--    README.md
+-rw-r--r--    grails.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/grunt:
+-rw-r--r--    README.md
+-rw-r--r--    grunt.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/gulp:
+-rw-r--r--    README.md
+-rw-r--r--    gulp.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/hanami:
+-rw-r--r--    README.md
+-rw-r--r--    hanami.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/helm:
+-rw-r--r--    README.md
+-rw-r--r--    helm.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/heroku:
+-rw-r--r--    README.md
+-rw-r--r--    heroku.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/history:
+-rw-r--r--    README.md
+-rw-r--r--    history.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/history-substring-search:
+-rw-r--r--    README.md
+-rw-r--r--    history-substring-search.plugin.zsh
+-rw-r--r--    history-substring-search.zsh
+-rwxr-xr-x    update-from-upstream.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/homestead:
+-rw-r--r--    README.md
+-rw-r--r--    homestead.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/httpie:
+-rw-r--r--    README.md
+-rw-r--r--    httpie.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/iterm2:
+-rw-r--r--    README.md
+-rw-r--r--    iterm2.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/iwhois:
+-rw-r--r--    README.md
+-rw-r--r--    iwhois.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/jake-node:
+-rw-r--r--    README.md
+-rw-r--r--    jake-node.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/jenv:
+-rw-r--r--    README.md
+-rw-r--r--    jenv.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/jhbuild:
+-rw-r--r--    README.md
+-rw-r--r--    jhbuild.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/jira:
+-rw-r--r--    README.md
+-rw-r--r--    _jira
+-rw-r--r--    jira.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/jruby:
+-rw-r--r--    jruby.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/jsontools:
+-rw-r--r--    README.md
+-rw-r--r--    jsontools.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/jump:
+-rw-r--r--    README.md
+-rw-r--r--    jump.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/kate:
+-rw-r--r--    README.md
+-rw-r--r--    kate.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/kitchen:
+-rw-r--r--    README.md
+-rw-r--r--    _kitchen
+
+/Users/tmeyer/.oh-my-zsh/plugins/knife:
+-rw-r--r--    _knife
+
+/Users/tmeyer/.oh-my-zsh/plugins/knife_ssh:
+-rw-r--r--    knife_ssh.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/kops:
+-rw-r--r--    README.md
+-rw-r--r--    kops.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/kube-ps1:
+-rw-r--r--    README.md
+-rw-r--r--    kube-ps1.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/kubectl:
+-rw-r--r--    README.md
+-rw-r--r--    kubectl.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/laravel:
+-rw-r--r--    README.md
+-rw-r--r--    _artisan
+-rw-r--r--    laravel.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/laravel4:
+-rw-r--r--    README.md
+-rw-r--r--    laravel4.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/laravel5:
+-rw-r--r--    README.md
+-rw-r--r--    laravel5.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/last-working-dir:
+-rw-r--r--    README.md
+-rw-r--r--    last-working-dir.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/lein:
+-rw-r--r--    _lein
+
+/Users/tmeyer/.oh-my-zsh/plugins/lighthouse:
+-rw-r--r--    lighthouse.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/lol:
+-rw-r--r--    README.md
+-rw-r--r--    lol.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/macports:
+-rw-r--r--    README.md
+-rw-r--r--    _port
+-rw-r--r--    macports.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/magic-enter:
+-rw-r--r--    Readme.md
+-rw-r--r--    magic-enter.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/man:
+-rw-r--r--    README.md
+-rw-r--r--    man.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/marked2:
+-rw-r--r--    README.md
+-rw-r--r--    marked2.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/mercurial:
+-rw-r--r--    README.md
+-rw-r--r--    mercurial.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/meteor:
+-rw-r--r--    README.md
+-rw-r--r--    _meteor
+-rw-r--r--    meteor.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/minikube:
+-rw-r--r--    README.md
+-rw-r--r--    minikube.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/mix:
+-rw-r--r--    README.md
+-rw-r--r--    _mix
+
+/Users/tmeyer/.oh-my-zsh/plugins/mix-fast:
+-rw-r--r--    README.md
+-rw-r--r--    mix-fast.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/mosh:
+-rw-r--r--    README.md
+-rw-r--r--    mosh.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/mvn:
+-rw-r--r--    README.md
+-rw-r--r--    mvn.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/mysql-macports:
+-rw-r--r--    mysql-macports.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/n98-magerun:
+-rw-r--r--    n98-magerun.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/nanoc:
+-rw-r--r--    README.md
+-rw-r--r--    _nanoc
+-rw-r--r--    nanoc.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/ng:
+-rw-r--r--    README.md
+-rw-r--r--    ng.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/nmap:
+-rw-r--r--    README.md
+-rw-r--r--    nmap.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/node:
+-rw-r--r--    README.md
+-rw-r--r--    node.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/nomad:
+-rw-r--r--    README.md
+-rw-r--r--    _nomad
+
+/Users/tmeyer/.oh-my-zsh/plugins/npm:
+-rw-r--r--    README.md
+-rw-r--r--    npm.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/npx:
+-rw-r--r--    README.md
+-rw-r--r--    npx.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/nvm:
+-rw-r--r--    README.md
+-rw-r--r--    _nvm
+-rw-r--r--    nvm.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/nyan:
+-rw-r--r--    README.md
+-rw-r--r--    nyan.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/oc:
+-rw-r--r--    oc.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/osx:
+-rw-r--r--    README.md
+-rw-r--r--    osx.plugin.zsh
+-rw-r--r--    spotify
+
+/Users/tmeyer/.oh-my-zsh/plugins/pass:
+-rw-r--r--    _pass
+
+/Users/tmeyer/.oh-my-zsh/plugins/paver:
+-rw-r--r--    paver.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/pep8:
+-rw-r--r--    README.md
+-rw-r--r--    _pep8
+
+/Users/tmeyer/.oh-my-zsh/plugins/per-directory-history:
+-rw-r--r--    README.md
+lrwxr-xr-x    per-directory-history.plugin.zsh -> SYMLINK
+-rw-r--r--    per-directory-history.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/percol:
+-rw-r--r--    README.md
+-rw-r--r--    percol.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/perl:
+-rw-r--r--    perl.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/perms:
+-rw-r--r--    README.md
+-rw-r--r--    perms.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/phing:
+-rw-r--r--    phing.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/pip:
+-rw-r--r--    _pip
+-rw-r--r--    pip.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/pj:
+-rw-r--r--    README.md
+-rw-r--r--    pj.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/pod:
+-rw-r--r--    _pod
+
+/Users/tmeyer/.oh-my-zsh/plugins/postgres:
+-rw-r--r--    README.md
+-rw-r--r--    postgres.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/pow:
+-rw-r--r--    pow.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/powder:
+-rw-r--r--    _powder
+
+/Users/tmeyer/.oh-my-zsh/plugins/powify:
+-rw-r--r--    _powify
+
+/Users/tmeyer/.oh-my-zsh/plugins/profiles:
+-rw-r--r--    profiles.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/pyenv:
+-rw-r--r--    pyenv.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/pylint:
+-rw-r--r--    README.md
+-rw-r--r--    _pylint
+-rw-r--r--    pylint.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/python:
+-rw-r--r--    README.md
+-rw-r--r--    python.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/rails:
+-rw-r--r--    _rails
+-rw-r--r--    rails.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/rake:
+-rw-r--r--    rake.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/rake-fast:
+-rw-r--r--    README.md
+-rw-r--r--    rake-fast.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/rand-quote:
+-rw-r--r--    README.md
+-rw-r--r--    rand-quote.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/rbenv:
+-rw-r--r--    rbenv.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/rbfu:
+-rw-r--r--    rbfu.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/react-native:
+-rw-r--r--    README.md
+-rw-r--r--    _react-native
+-rw-r--r--    react-native.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/rebar:
+-rw-r--r--    _rebar
+
+/Users/tmeyer/.oh-my-zsh/plugins/redis-cli:
+-rw-r--r--    _redis-cli
+
+/Users/tmeyer/.oh-my-zsh/plugins/repo:
+-rw-r--r--    README.md
+-rw-r--r--    _repo
+-rw-r--r--    repo.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/rsync:
+-rw-r--r--    README.md
+-rw-r--r--    rsync.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/ruby:
+-rw-r--r--    README.md
+-rw-r--r--    ruby.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/rust:
+-rw-r--r--    _rust
+
+/Users/tmeyer/.oh-my-zsh/plugins/rvm:
+-rw-r--r--    rvm.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/safe-paste:
+-rw-r--r--    safe-paste.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/salt:
+-rw-r--r--    README.md
+-rw-r--r--    _salt
+
+/Users/tmeyer/.oh-my-zsh/plugins/sbt:
+-rw-r--r--    README.md
+-rw-r--r--    _sbt
+-rw-r--r--    sbt.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/scala:
+-rw-r--r--    README.md
+-rw-r--r--    _scala
+
+/Users/tmeyer/.oh-my-zsh/plugins/scd:
+-rw-r--r--    README.md
+-rw-r--r--    scd
+-rw-r--r--    scd.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/screen:
+-rw-r--r--    screen.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/scw:
+-rw-r--r--    README.md
+-rw-r--r--    _scw
+
+/Users/tmeyer/.oh-my-zsh/plugins/sfffe:
+-rw-r--r--    sfffe.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/shrink-path:
+-rw-r--r--    README.md
+-rw-r--r--    shrink-path.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/singlechar:
+-rw-r--r--    singlechar.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/spring:
+-rw-r--r--    README.md
+-rw-r--r--    _spring
+
+/Users/tmeyer/.oh-my-zsh/plugins/sprunge:
+-rw-r--r--    sprunge.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/ssh-agent:
+-rw-r--r--    README.md
+-rw-r--r--    ssh-agent.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/stack:
+-rw-r--r--    README.md
+-rw-r--r--    stack.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/sublime:
+-rw-r--r--    README.md
+-rw-r--r--    sublime.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/sudo:
+-rw-r--r--    README.md
+-rw-r--r--    sudo.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/supervisor:
+-rw-r--r--    _supervisorctl
+-rw-r--r--    _supervisord
+-rw-r--r--    supervisor.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/suse:
+-rw-r--r--    README.md
+-rw-r--r--    suse.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/svn:
+-rw-r--r--    README.md
+-rw-r--r--    svn.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/svn-fast-info:
+-rw-r--r--    svn-fast-info.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/swiftpm:
+-rw-r--r--    README.md
+-rw-r--r--    _swift
+-rw-r--r--    swiftpm.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/symfony:
+-rw-r--r--    README.md
+-rw-r--r--    symfony.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/symfony2:
+-rw-r--r--    README.md
+-rw-r--r--    symfony2.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/systemadmin:
+-rw-r--r--    README.md
+-rw-r--r--    systemadmin.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/systemd:
+-rw-r--r--    README.md
+-rw-r--r--    systemd.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/taskwarrior:
+-rw-r--r--    README.md
+-rw-r--r--    _task
+-rw-r--r--    taskwarrior.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/terminalapp:
+-rw-r--r--    terminalapp.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/terminitor:
+-rw-r--r--    _terminitor
+
+/Users/tmeyer/.oh-my-zsh/plugins/terraform:
+-rw-r--r--    README.md
+-rw-r--r--    _terraform
+-rw-r--r--    terraform.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/textastic:
+-rw-r--r--    README.md
+-rw-r--r--    textastic.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/textmate:
+-rw-r--r--    README.md
+-rw-r--r--    textmate.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/thefuck:
+-rw-r--r--    README.md
+-rw-r--r--    thefuck.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/themes:
+-rw-r--r--    README.md
+-rw-r--r--    _theme
+-rw-r--r--    themes.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/thor:
+-rw-r--r--    _thor
+
+/Users/tmeyer/.oh-my-zsh/plugins/tig:
+-rw-r--r--    README.md
+-rw-r--r--    tig.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/tmux:
+-rw-r--r--    README.md
+-rw-r--r--    tmux.extra.conf
+-rw-r--r--    tmux.only.conf
+-rw-r--r--    tmux.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/tmux-cssh:
+-rw-r--r--    _tmux-cssh
+
+/Users/tmeyer/.oh-my-zsh/plugins/tmuxinator:
+-rw-r--r--    README.md
+-rw-r--r--    _tmuxinator
+-rw-r--r--    tmuxinator.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/torrent:
+-rw-r--r--    torrent.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/transfer:
+-rw-r--r--    README.md
+-rw-r--r--    transfer.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/tugboat:
+-rw-r--r--    _tugboat
+
+/Users/tmeyer/.oh-my-zsh/plugins/ubuntu:
+-rw-r--r--    README.md
+-rw-r--r--    ubuntu.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/ufw:
+-rw-r--r--    _ufw
+
+/Users/tmeyer/.oh-my-zsh/plugins/urltools:
+-rw-r--r--    README.md
+-rw-r--r--    urltools.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/vagrant:
+-rw-r--r--    README.md
+-rw-r--r--    _vagrant
+
+/Users/tmeyer/.oh-my-zsh/plugins/vagrant-prompt:
+-rw-r--r--    README.md
+-rw-r--r--    vagrant-prompt.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/vault:
+-rw-r--r--    README.md
+-rw-r--r--    _vault
+
+/Users/tmeyer/.oh-my-zsh/plugins/vi-mode:
+-rw-r--r--    README.md
+-rw-r--r--    vi-mode.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/vim-interaction:
+-rw-r--r--    README.md
+-rw-r--r--    vim-interaction.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/virtualenv:
+-rw-r--r--    README.md
+-rw-r--r--    virtualenv.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/virtualenvwrapper:
+-rw-r--r--    virtualenvwrapper.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/vscode:
+-rw-r--r--    README.md
+-rw-r--r--    vscode.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/vundle:
+-rw-r--r--    README.md
+-rw-r--r--    vundle.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/wakeonlan:
+-rw-r--r--    README
+-rw-r--r--    _wake
+-rw-r--r--    wakeonlan.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/wd:
+-rw-r--r--    LICENSE
+-rw-r--r--    README.md
+-rw-r--r--    _wd.sh
+-rw-r--r--    wd.plugin.zsh
+-rw-r--r--    wd.sh
+
+/Users/tmeyer/.oh-my-zsh/plugins/web-search:
+-rw-r--r--    README.md
+-rw-r--r--    web-search.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/wp-cli:
+-rw-r--r--    README.md
+-rw-r--r--    wp-cli.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/xcode:
+-rw-r--r--    README.md
+-rw-r--r--    _xcselv
+-rw-r--r--    xcode.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/yarn:
+-rw-r--r--    README.md
+-rw-r--r--    _yarn
+-rw-r--r--    yarn.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/yii:
+-rw-r--r--    yii.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/yii2:
+-rw-r--r--    README.md
+-rw-r--r--    yii2.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/yum:
+-rw-r--r--    README.md
+-rw-r--r--    yum.plugin.zsh
+
+/Users/tmeyer/.oh-my-zsh/plugins/z:
