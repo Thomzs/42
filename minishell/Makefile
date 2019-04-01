@@ -6,7 +6,7 @@
 #    By: tmeyer <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/08 13:01:27 by tmeyer            #+#    #+#              #
-#    Updated: 2019/03/27 08:15:52 by tmeyer           ###   ########.fr        #
+#    Updated: 2019/04/01 10:19:43 by tmeyer           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,7 +42,7 @@ OBJ_NAME = $(SRC_NAME:%.c=%.o)
 all: $(NAME)
 
 $(LIB) :
-	-@make -C libft/ > /dev/null || true
+	-@make -C libft/ > /dev/null
 
 $(NAME): $(LIB) $(OBJ)
 	@$(CC) $(OBJ) libft/libft.a -o $(NAME)

@@ -6,7 +6,7 @@
 /*   By: tmeyer <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/11 17:47:13 by tmeyer            #+#    #+#             */
-/*   Updated: 2019/03/27 16:21:19 by tmeyer           ###   ########.fr       */
+/*   Updated: 2019/04/01 15:11:51 by tmeyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,22 +19,25 @@ char				**ft_unsetenv(char *var, char **env)
 	int		k;
 	char	*tmp;
 
-	i = ft_strlen(var);
 	j = 0;
-	k = 1;
+	k = 0;
 	tmp = ft_strjoin(var, "=");
+	i = ft_strlen(var);
 	while (env[j] && ft_strncmp(env[j], tmp, i))
 		j++;
-	if (env[j])
-	{
-		free(env[j]);
-		while (env[j + k])
-			k++;
-		env[j] = ft_strdup(env[j + k - 1]);
-		free(env[j + k - 1]);
-		env[j + k - 1] = NULL;
-	}
 	ft_memdel((void**)&tmp);
+	if (!env[j])
+		return (env);
+	while (env[k])
+		k++;
+	if (--k == j)
+		ft_memdel((void**)&env[j]);
+	else
+	{
+		ft_memdel((void**)&env[j]);
+		env[j] = ft_strdup(env[k]);
+		ft_memdel((void**)&env[k]);
+	}
 	return (env);
 }
 
@@ -89,15 +92,13 @@ char				*get_pwd(void)
 	i = 1;
 	buf = NULL;
 	str = NULL;
-	while (!buf)
+	if (!(buf = (char*)malloc(sizeof(char) * (256))))
+		return (NULL);
+	if (!(buf = getcwd(buf, 256)))
 	{
-		if (!(buf = (char*)malloc(sizeof(char) * (256))))
-			return (NULL);
-		if (!(buf = getcwd(buf, 256)))
-		{
-			ft_putendl_fd("minishell: cannot access asked directory", 2);
-			return (NULL);
-		}
+		ft_memdel((void**)&buf);
+		ft_putendl_fd("minishell: cannot access asked directory", 2);
+		return (NULL);
 	}
 	str = ft_strjoin("PWD=", buf);
 	ft_memdel((void**)&buf);
@@ -114,7 +115,6 @@ t_env				*create_env(t_env *environ)
 	environ->shlvl = ft_strdup("SHLVL=1");
 	environ->oldpwd = NULL;
 	environ->prev = NULL;
-	environ->home = NULL;
 	environ->pwd = get_pwd();
 	if (!(environ->env = (char**)malloc(sizeof(char*)
 					* (environ->pwd ? 4 : 3))))

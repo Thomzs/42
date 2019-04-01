@@ -6,24 +6,11 @@
 /*   By: tmeyer <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/04 08:30:30 by tmeyer            #+#    #+#             */
-/*   Updated: 2019/03/27 14:26:10 by tmeyer           ###   ########.fr       */
+/*   Updated: 2019/04/01 14:25:55 by tmeyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minishell.h"
-
-static void		ft_test(char **tab, char **env) // TO REMOVE
-{
-	int i;
-
-	i = 0;
-	while (tab[i])
-	{
-		printf("[%s]\n", tab[i]);
-		i++;
-	}
-	(void)env;
-}
 
 static void		print_env(char *env[])
 {
@@ -48,8 +35,6 @@ static int		check_builtins(char **tab, t_env *environ)
 		environ->env = ft_unsetenv(tab[1], environ->env);
 	else if (!ft_strcmp(tab[0], "echo"))
 		ft_echo(tab);
-	else if (!ft_strcmp(tab[0], "test"))
-		ft_test(tab, environ->env);
 	else
 		return (-1);
 	return (1);

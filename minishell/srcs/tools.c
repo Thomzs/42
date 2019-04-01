@@ -6,7 +6,7 @@
 /*   By: tmeyer <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/11 14:47:29 by tmeyer            #+#    #+#             */
-/*   Updated: 2019/03/27 14:14:43 by tmeyer           ###   ########.fr       */
+/*   Updated: 2019/04/01 11:16:04 by tmeyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,8 +50,6 @@ t_env		*free_struct(t_env *environ)
 	environ->prev = NULL;
 	free(environ->oldpwd);
 	environ->oldpwd = NULL;
-	free(environ->home);
-	environ->home = NULL;
 	free(environ);
 	environ = NULL;
 	return (environ);

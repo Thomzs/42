@@ -6,7 +6,7 @@
 /*   By: tmeyer <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/25 20:30:26 by tmeyer            #+#    #+#             */
-/*   Updated: 2019/03/27 13:56:30 by tmeyer           ###   ########.fr       */
+/*   Updated: 2019/04/01 11:01:05 by tmeyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,6 @@ typedef struct	s_env
 	char		*shlvl;
 	char		*prev;
 	char		*oldpwd;
-	char		*home;
 }				t_env;
 
 t_env			*free_struct(t_env *env);

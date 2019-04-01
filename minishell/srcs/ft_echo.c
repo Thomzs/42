@@ -6,7 +6,7 @@
 /*   By: tmeyer <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/20 08:46:56 by tmeyer            #+#    #+#             */
-/*   Updated: 2019/03/27 13:26:39 by tmeyer           ###   ########.fr       */
+/*   Updated: 2019/04/01 09:29:20 by tmeyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,11 +55,10 @@ void			ft_echo(char **tab)
 			i++;
 			break ;
 		}
-		if (tab[i][0] == '-' && tab[i][1] != 0
+		while (tab[i][0] == '-' && tab[i][1] != 0
 				&& check_flags(tab[i] + 1, &flag))
 			i++;
-		else
-			break ;
+		break ;
 	}
 	echo(i, tab, flag);
 }

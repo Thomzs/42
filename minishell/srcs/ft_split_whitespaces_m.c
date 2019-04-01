@@ -6,7 +6,7 @@
 /*   By: tmeyer <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/16 17:25:47 by tmeyer            #+#    #+#             */
-/*   Updated: 2019/03/27 13:27:26 by tmeyer           ###   ########.fr       */
+/*   Updated: 2019/04/01 14:33:44 by tmeyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,14 +69,14 @@ static char		**ft_words(char *str, int *i, char **tab, int j)
 			move(str[l], str, &l, &k);
 		l++;
 	}
-	n = l - k - *i;
+	n = (k == 0 ? l - k - *i : l - k - *i - 1);
 	if (!(tab[j] = (char*)ft_memalloc(n + 1)))
 		return (ft_freetab_char(tab));
+	*i = (k == 0 ? *i : *i + 1);
 	k = 0;
 	while (k < n && str[*i] != '\0')
 	{
-		if (str[*i] != 34 && str[*i] != 39)
-			tab[j][k++] = str[*i];
+		tab[j][k++] = str[*i];
 		*i += 1;
 	}
 	if (str[*i] == '\0')
