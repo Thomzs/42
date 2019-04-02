@@ -6,7 +6,7 @@
 /*   By: tmeyer <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/11 17:47:13 by tmeyer            #+#    #+#             */
-/*   Updated: 2019/04/01 15:11:51 by tmeyer           ###   ########.fr       */
+/*   Updated: 2019/04/02 07:46:25 by tmeyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,20 +87,23 @@ char				*get_pwd(void)
 {
 	int			i;
 	char		*buf;
+	char		*tmp;
 	char		*str;
 
 	i = 1;
 	buf = NULL;
 	str = NULL;
-	if (!(buf = (char*)malloc(sizeof(char) * (256))))
+	if (!(buf = (char*)ft_memalloc(256)))
 		return (NULL);
-	if (!(buf = getcwd(buf, 256)))
+	if (!(tmp = getcwd(buf, 256)))
 	{
 		ft_memdel((void**)&buf);
+		tmp = NULL;
 		ft_putendl_fd("minishell: cannot access asked directory", 2);
 		return (NULL);
 	}
-	str = ft_strjoin("PWD=", buf);
+	str = ft_strjoin("PWD=", tmp);
+	tmp = NULL;
 	ft_memdel((void**)&buf);
 	return (str);
 }

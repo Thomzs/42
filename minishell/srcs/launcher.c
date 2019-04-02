@@ -6,7 +6,7 @@
 /*   By: tmeyer <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/25 22:55:17 by tmeyer            #+#    #+#             */
-/*   Updated: 2019/04/01 15:31:29 by tmeyer           ###   ########.fr       */
+/*   Updated: 2019/04/02 08:27:07 by tmeyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,8 +108,7 @@ int				main(int ac, char *av[], char *envp[])
 	char	**command;
 	int		i;
 	t_env	*environ;
-	
-	envp = NULL;
+
 	(void)ac;
 	i = 0;
 	command = NULL;

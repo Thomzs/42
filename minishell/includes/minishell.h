@@ -6,7 +6,7 @@
 /*   By: tmeyer <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/25 20:30:26 by tmeyer            #+#    #+#             */
-/*   Updated: 2019/04/01 11:01:05 by tmeyer           ###   ########.fr       */
+/*   Updated: 2019/04/02 08:45:01 by tmeyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,20 +45,32 @@ typedef struct	s_env
 
 t_env			*free_struct(t_env *env);
 t_env			*create_env(t_env *environ);
+
 int				interpretor(char **tab, t_env *env);
-int				expantions(char **str, t_env *environ);
-int				error_code(int code);
 int				ft_cd(char **tab, t_env *environ);
-int				check_line(char **line);
+void			ft_echo(char **tab);
+
+int				error_code(int code);
+
 int				get_command(const int fd, char **str);
+
+int				check_line(char **line);
 int				check_exec(char **tab, t_env *environ);
 int				check_str(char **str, t_env *environ);
+
+int				expantions(char **str, t_env *environ);
+int				expone_tilde(char **str, t_env *envirn, int *i);
+int				expone_tilde_tw(char **str, t_env *envirn, int *i);
+int				expone_tilde_tr(char **str, t_env *envirn, int *i);
+char			*str_replace_str(char **str, char *sub, int i, int j);
+
 char			*get_pwd(void);
+
 char			*ft_getenv(char *var, char **env);
 char			**ft_unsetenv(char *var, char **env);
 char			**ft_putenv(char *var, char **env);
 char			**ft_setenv(char *var, char *content, char **env);
+
 char			**ft_split_whitespaces_m(char *str);
-void			ft_echo(char **tab);
 
 #endif

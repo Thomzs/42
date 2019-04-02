@@ -6,7 +6,7 @@
 #    By: tmeyer <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/08 13:01:27 by tmeyer            #+#    #+#              #
-#    Updated: 2019/04/01 10:19:43 by tmeyer           ###   ########.fr        #
+#    Updated: 2019/04/02 08:51:31 by tmeyer           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,6 +17,7 @@ SRC_NAME = launcher.c \
 		   env.c \
 		   env2.c \
 		   expantions.c \
+		   expantions2.c \
 		   ft_echo.c \
 		   get_command.c \
 		   ft_split_whitespaces_m.c \
@@ -29,7 +30,7 @@ NAME = minishell
 
 CC = clang
 
-CFLAGS = -I includes -I libft/includes -Wall -Wextra -Werror -g3
+CFLAGS = -I includes -I libft/includes -Wall -Wextra -Werror
 
 LIB = libft/libft.a
 

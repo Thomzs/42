@@ -6,7 +6,7 @@
 /*   By: tmeyer <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/18 09:02:56 by tmeyer            #+#    #+#             */
-/*   Updated: 2019/04/01 15:31:27 by tmeyer           ###   ########.fr       */
+/*   Updated: 2019/04/02 08:50:43 by tmeyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,14 @@ static char		*find_match(t_env *environ, char *str, int i, int j)
 	int k;
 
 	k = 0;
-	while (environ->env[k] && ft_strncmp(environ->env[k], &str[i - j], j))
+	while (environ->env[k] && ft_strncmp(environ->env[k], &str[i - j], j - 1))
 		k++;
 	if (!environ->env[k])
 		return (ft_strdup("\0"));
 	return (ft_strdup(ft_strchr(environ->env[k], '=') + 1));
 }
 
-static char		*str_replace_str(char **str, char *sub, int i, int j)
+char			*str_replace_str(char **str, char *sub, int i, int j)
 {
 	int		k;
 	int		l;
@@ -54,29 +54,25 @@ static char		*str_replace_str(char **str, char *sub, int i, int j)
 
 static int		expone(char **str, t_env *environ, int *i)
 {
-	if (str[0][*i + 1] == '/' || str[0][*i + 1] <= 32 || str[0][*i + 1] == '$')
+	if (str[0][*i + 1] == '/' || str[0][*i + 1] <= 32
+			|| str[0][*i + 1] == ';' || str[0][*i + 1] == '$')
 	{
-		if (!(*str = str_replace_str(str,
-						ft_getenv("HOME", environ->env), *i, 1)))
+		if (expone_tilde(str, environ, i))
 			return (ERROR_HOME);
-		i += ft_strlen(ft_getenv("HOME", environ->env)) - 1;
 	}
 	else if (str[0][*i + 1] == '-' && (str[0][*i + 2] == '/'
-				|| str[0][*i + 2] <= 32 || str[0][*i + 2] == '$'))
+				|| str[0][*i + 2] == ';' || str[0][*i + 2] <= 32
+				|| str[0][*i + 2] == '$'))
 	{
-		if (!environ->oldpwd
-				|| !(*str = str_replace_str(str, environ->oldpwd + 7,
-						*i + 1, 2)))
+		if (expone_tilde_tw(str, environ, i))
 			return (ERROR_OLDPWD);
-		*i += ft_strlen(environ->oldpwd + 7) - 1;
 	}
 	else if (str[0][*i + 1] == '+' && (str[0][*i + 2] == '/'
-				|| str[0][*i + 2] <= 32 || str[0][*i + 2] == '$'))
+				|| str[0][*i + 2] <= 32 || str[0][*i + 2] == ';'
+				|| str[0][*i + 2] == '$'))
 	{
-		if (!environ->pwd ||
-				!(*str = str_replace_str(str, environ->pwd + 4, *i + 1, 2)))
+		if (expone_tilde_tr(str, environ, i))
 			return (ERROR_PWD);
-		*i += ft_strlen(environ->pwd + 4) - 1;
 	}
 	return (-1);
 }
@@ -97,9 +93,8 @@ static void		exptwo(char **str, t_env *environ, int *i)
 		j++;
 	}
 	sub = find_match(environ, *str, *i, j);
-	*str = str_replace_str(str, sub, *i, j + 2);
-	*i = *i - j + ft_strlen(sub);
-	printf("str[i] = '%c' || i: %d\n", *str[*i], *i);
+	*str = str_replace_str(str, sub, *i - 1, j + 1);
+	*i = *i - j - 2 + ft_strlen(sub);
 	free(sub);
 	sub = NULL;
 }
