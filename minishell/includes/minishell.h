@@ -6,7 +6,7 @@
 /*   By: tmeyer <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/25 20:30:26 by tmeyer            #+#    #+#             */
-/*   Updated: 2019/04/02 08:45:01 by tmeyer           ###   ########.fr       */
+/*   Updated: 2019/04/02 08:55:23 by tmeyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@
 # include <sys/time.h>
 # include <sys/resource.h>
 # include <dirent.h>
-# include <stdio.h>				// TO REMOVE~
 
 # define ERROR_ENV		6
 # define ERROR_PARSE	2
