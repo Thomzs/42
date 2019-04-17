@@ -26,11 +26,11 @@ void  affichage_calendrier(int tables[5][7][4])
 
     j = 0;
     printf("    | L | M | M | J | V | S | D \n");
-    while (j < 4) //Compteur pour les jours
+    while (j < 4) //Compteur pour les heures
     {
         k = 0;
 	printf("%dh ", 19 + j);
-        while (k < 7) //compteur pour les heure
+        while (k < 7) //compteur pour les jours
 	{
 	    if (creneau_libre(tables, j, k) == 1) //Si le creneau est libre on le laisse vide
 		printf("|   ");
