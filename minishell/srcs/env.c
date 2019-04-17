@@ -6,7 +6,7 @@
 /*   By: tmeyer <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/11 17:47:13 by tmeyer            #+#    #+#             */
-/*   Updated: 2019/04/02 07:46:25 by tmeyer           ###   ########.fr       */
+/*   Updated: 2019/04/03 13:47:27 by tmeyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,8 +68,8 @@ char				**ft_setenv(char *var, char *content, char **env)
 	char	*tmp;
 
 	j = 0;
-	i = ft_strlen(var);
-	tmp = ft_strjoin(var, "=");
+	i = (var[0] ? ft_strlen(var) : 0);
+	tmp = (i ? ft_strjoin(var, "=") : ft_strdup("="));
 	while (env && env[j] && ft_strncmp(env[j], tmp, i + 1))
 		j++;
 	if (!env[j])

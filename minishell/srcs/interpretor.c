@@ -6,7 +6,7 @@
 /*   By: tmeyer <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/04 08:30:30 by tmeyer            #+#    #+#             */
-/*   Updated: 2019/04/01 14:25:55 by tmeyer           ###   ########.fr       */
+/*   Updated: 2019/04/03 13:45:11 by tmeyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static int		check_builtins(char **tab, t_env *environ)
 		ft_cd(tab, environ);
 	else if (!ft_strcmp(tab[0], "setenv") && tab[1] && tab[2])
 		environ->env = ft_setenv(tab[1], tab[2], environ->env);
-	else if (!ft_strcmp(tab[0], "unsetenv") && tab[1])
+	else if (!ft_strcmp(tab[0], "unsetenv") && tab[1] && tab[1][0])
 		environ->env = ft_unsetenv(tab[1], environ->env);
 	else if (!ft_strcmp(tab[0], "echo"))
 		ft_echo(tab);

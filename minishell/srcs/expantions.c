@@ -6,7 +6,7 @@
 /*   By: tmeyer <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/18 09:02:56 by tmeyer            #+#    #+#             */
-/*   Updated: 2019/04/02 08:50:43 by tmeyer           ###   ########.fr       */
+/*   Updated: 2019/04/05 09:50:45 by tmeyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,14 @@
 
 static char		*find_match(t_env *environ, char *str, int i, int j)
 {
-	int k;
+	int		k;
+	char	*tmp;
 
+	tmp = ft_strjoin(&str[i - j], "=");
 	k = 0;
-	while (environ->env[k] && ft_strncmp(environ->env[k], &str[i - j], j - 1))
+	while (environ->env[k] && ft_strncmp(environ->env[k], tmp, ft_strlen(tmp)))
 		k++;
+	ft_memdel((void**)&tmp);
 	if (!environ->env[k])
 		return (ft_strdup("\0"));
 	return (ft_strdup(ft_strchr(environ->env[k], '=') + 1));
