@@ -65,13 +65,91 @@ void	test_isalnum(void)
 	printf("\n");
 }
 
+void	test_isascii(void)
+{
+	printf("IS ASCII\n");
+	for (int i = -10; i <= 140; i++)
+		printf("[%d]: %d\n", i, ft_isascii(i));
+	printf("\n");
+}
+
+void	test_isprint(void)
+{
+	printf("IS PRINT\n");
+	for (int i = 0; i <= 127; i++)
+		printf("[%d]: %d\n", i, ft_isprint(i));
+	printf("\n");
+}
+
+void	test_islower(void)
+{
+	char *str = "J'AiMe LeS PaTAtEs";
+	printf("ISLOWER\n");
+	while (*str)
+	{
+		printf("[%c]: %d\n", *str, ft_islower(*str));
+		str++;
+	}
+	printf("\n");
+}
+
+void	test_isupper(void)
+{
+	char *str = "J'AiMe LeS PaTAtEs";
+	printf("ISUPPER\n");
+	while (*str)
+	{
+		printf("[%c]: %d\n", *str, ft_isupper(*str));
+		str++;
+	}
+	printf("\n");
+}
+
+void	test_toupper(void)
+{
+	char *str = "J'AiMe LeS PaTAtEs";
+	char *str2;
+	int i = -1;
+
+	if (!(str2 = (char*)malloc(sizeof(char) * 19)))
+		exit(1);
+	strcpy(str2, str);
+	printf("TOUPPER\nbefore: [%s]\n", str2);
+	while (str2[++i])
+		str2[i] = ft_toupper(str2[i]);
+	printf("After: [%s]\n\n", str2);
+	free(str2);
+}
+
+void	test_tolower(void)
+{
+	char *str = "J'AiMe LeS PaTAtEs";
+	char *str2;
+	int i = -1;
+
+	if (!(str2 = (char*)malloc(sizeof(char) * 19)))
+		exit(1);
+	strcpy(str2, str);
+	printf("TOLOWER\nbefore: [%s]\n", str2);
+	while (str2[++i])
+		str2[i] = ft_tolower(str2[i]);
+	printf("After: [%s]\n\n", str2);
+	free(str2);
+}
+
 void	test_lib(void)
 {
-	test_bzero();
-	test_strcat();
+	test_bzero(); //CHECK NULL
+	test_strcat(); //CHECK NULL
 	test_isalpha();
 	test_isdigit();
 	test_isalnum();
+	test_isascii();
+	test_isprint();
+	test_islower();
+	test_isupper();
+	test_toupper();
+	test_tolower();
 }
 
 int		main(int ac, char **av)
