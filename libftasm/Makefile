@@ -24,7 +24,9 @@ S_FILES = ft_bzero.s \
 		  ft_islower.s \
 		  ft_isupper.s \
 		  ft_toupper.s \
-		  ft_tolower.s 
+		  ft_tolower.s \
+		  ft_strlen.s \
+		  ft_puts.s 
 
 S_PATH = srcs
 

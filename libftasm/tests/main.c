@@ -137,6 +137,23 @@ void	test_tolower(void)
 	free(str2);
 }
 
+void	test_strlen(void)
+{
+	char *str = "J'AiMe LeS PaTAtEs";
+	printf("STRLEN\nstr: [%s]\nstrlen: %zu | ft_strlen: %zu\n",
+			str, strlen(str), ft_strlen(str));
+	printf("str: NULL\nft_strlen: %zu\n\n", ft_strlen(NULL));
+}
+
+void	test_puts(void)
+{
+	char *str = "J'aime les patates";
+	printf("PUTS\nstring: [%s]\nft_puts: [", str);
+	fflush(stdout);
+	ft_puts(str);
+	printf("]\n\n");
+}
+
 void	test_lib(void)
 {
 	test_bzero(); //CHECK NULL
@@ -150,6 +167,8 @@ void	test_lib(void)
 	test_isupper();
 	test_toupper();
 	test_tolower();
+	test_strlen();
+	test_puts();
 }
 
 int		main(int ac, char **av)
