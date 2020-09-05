@@ -2,16 +2,16 @@ global _ft_strlen
 
 section .text
 _ft_strlen:
-	mov rax, 0
+	mov al, 0
 	cmp rdi, 0
 	je end
-
-beg:
-	cmp [rdi], byte 0
-	je end
-	inc rax
-	inc rdi
-	jmp beg
+	sub rcx, rcx
+	not rcx
+	cld
+	repne scasb
+	not rcx
+	dec rcx
+	mov rax, rcx
 
 end:
 	ret	

@@ -154,6 +154,33 @@ void	test_puts(void)
 	printf("]\n\n");
 }
 
+void	test_memset(void)
+{
+	char *str = "J'aime les patates";
+	char *str2;
+
+	if (!(str2 = (char*)malloc(sizeof(char) * 19)))
+		exit(1);
+	strcpy(str2, str);
+	printf("MEMSET\nbefore: [%s]\n", str2);
+	printf("c: \'c\' n: 10 after: [%s]\n\n", ft_memset(str2, 'c', 10));
+	free(str2);
+}
+
+void	test_memcpy(void)
+{
+	char *str = "J'aime les patates";
+	char *str2;
+	char *str3 = "Little change";
+
+	if (!(str2 = (char*)malloc(sizeof(char) * 19)))
+		exit(1);
+	strcpy(str2, str);
+	printf("MEMCPY\nbefore: [%s] substring: [%s]\n", str2, str3);
+	printf("c: \'c\' n: 10 after: [%s]\n\n", ft_memcpy(str2, str3, 10));
+	
+}
+
 void	test_lib(void)
 {
 	test_bzero(); //CHECK NULL
@@ -169,6 +196,8 @@ void	test_lib(void)
 	test_tolower();
 	test_strlen();
 	test_puts();
+	test_memset();
+	test_memcpy();
 }
 
 int		main(int ac, char **av)
