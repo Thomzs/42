@@ -1,6 +1,6 @@
 #include "libfts.h"
 
-void	test_bzero(void)
+static void	test_bzero(void)
 {
 	char str[10] = "123456789";
 	
@@ -20,7 +20,7 @@ void	test_bzero(void)
 			str[7], str[8]);
 }
 
-void	test_strcat(void)
+static void	test_strcat(void)
 {
 	char str[20] = "Hello";
 	printf("STRCAT\n");
@@ -29,7 +29,18 @@ void	test_strcat(void)
 	printf("\"\" + \"BONSOIR\": %s\n\n", ft_strcat(str2, "BONSOIR"));
 }
 
-void	test_isalpha(void)
+static void	test_strcpy(void)
+{
+	char str[19] = "J'aime les patates";
+	char *str2;
+
+	if (!(str2 = (char*)malloc(sizeof(char) * 19)))
+		exit(EXIT_FAILURE);
+	printf("STRCPY\nstr: [%s] | new: [%s]\n\n", str, strcpy(str2, str));
+	free(str2);
+}
+
+static void	test_isalpha(void)
 {
 	char *str = "J'41ME L3S PatAtes !";
 	printf("IS ALPHA\nstr: [%s]\n", str);
@@ -41,7 +52,7 @@ void	test_isalpha(void)
 	printf("\n");
 }
 
-void	test_isdigit(void)
+static void	test_isdigit(void)
 {
 	char *str = "J'41ME L3S PatAtes !";
 	printf("IS DIGIT\nstr: [%s]\n", str);
@@ -53,7 +64,7 @@ void	test_isdigit(void)
 	printf("\n");
 }
 
-void	test_isalnum(void)
+static void	test_isalnum(void)
 {
 	char *str = "J'41ME L3S PatAtes !";
 	printf("IS ALNUM\nstr: [%s]\n", str);
@@ -65,7 +76,7 @@ void	test_isalnum(void)
 	printf("\n");
 }
 
-void	test_isascii(void)
+static void	test_isascii(void)
 {
 	printf("IS ASCII\n");
 	for (int i = -10; i <= 140; i++)
@@ -73,7 +84,7 @@ void	test_isascii(void)
 	printf("\n");
 }
 
-void	test_isprint(void)
+static void	test_isprint(void)
 {
 	printf("IS PRINT\n");
 	for (int i = 0; i <= 127; i++)
@@ -81,7 +92,7 @@ void	test_isprint(void)
 	printf("\n");
 }
 
-void	test_islower(void)
+static void	test_islower(void)
 {
 	char *str = "J'AiMe LeS PaTAtEs";
 	printf("ISLOWER\n");
@@ -93,7 +104,7 @@ void	test_islower(void)
 	printf("\n");
 }
 
-void	test_isupper(void)
+static void	test_isupper(void)
 {
 	char *str = "J'AiMe LeS PaTAtEs";
 	printf("ISUPPER\n");
@@ -105,14 +116,14 @@ void	test_isupper(void)
 	printf("\n");
 }
 
-void	test_toupper(void)
+static void	test_toupper(void)
 {
 	char *str = "J'AiMe LeS PaTAtEs";
 	char *str2;
 	int i = -1;
 
 	if (!(str2 = (char*)malloc(sizeof(char) * 19)))
-		exit(1);
+		exit(EXIT_FAILURE);
 	strcpy(str2, str);
 	printf("TOUPPER\nbefore: [%s]\n", str2);
 	while (str2[++i])
@@ -121,13 +132,13 @@ void	test_toupper(void)
 	free(str2);
 }
 
-void	test_tolower(void)
+static void	test_tolower(void)
 {
 	char *str = "J'AiMe LeS PaTAtEs";
 	char *str2;
 	int i = -1;
 
-	if (!(str2 = (char*)malloc(sizeof(char) * 19)))
+	if (!(str2 = (char*)malloc(sizeof(char) * 26)))
 		exit(1);
 	strcpy(str2, str);
 	printf("TOLOWER\nbefore: [%s]\n", str2);
@@ -137,7 +148,7 @@ void	test_tolower(void)
 	free(str2);
 }
 
-void	test_strlen(void)
+static void	test_strlen(void)
 {
 	char *str = "J'AiMe LeS PaTAtEs";
 	printf("STRLEN\nstr: [%s]\nstrlen: %zu | ft_strlen: %zu\n",
@@ -145,7 +156,7 @@ void	test_strlen(void)
 	printf("str: NULL\nft_strlen: %zu\n\n", ft_strlen(NULL));
 }
 
-void	test_puts(void)
+static void	test_puts(void)
 {
 	char *str = "J'aime les patates";
 	printf("PUTS\nstring: [%s]\nft_puts: [", str);
@@ -154,7 +165,19 @@ void	test_puts(void)
 	printf("]\n\n");
 }
 
-void	test_memset(void)
+static void	test_putstr(void)
+{
+	char *str = "J'aime les patates !\n";
+	char *str2 = "J'aime les patates !";
+	
+	printf("PUTSTR\nstring to output: [J'aime les patates !] (w newline):\n");
+	ft_putstr(str);
+	printf("-endmarker\nstring to output: [J'aime les patates !] (w NO newline):\n");
+	ft_putstr(str2);
+	printf("-endmarker\n\n");
+}
+
+static void	test_memset(void)
 {
 	char *str = "J'aime les patates";
 	char *str2;
@@ -167,24 +190,36 @@ void	test_memset(void)
 	free(str2);
 }
 
-void	test_memcpy(void)
+static void	test_memcpy(void)
 {
 	char *str = "J'aime les patates";
 	char *str2;
 	char *str3 = "Little change";
 
 	if (!(str2 = (char*)malloc(sizeof(char) * 19)))
-		exit(1);
+		exit(EXIT_FAILURE);
 	strcpy(str2, str);
 	printf("MEMCPY\nbefore: [%s] substring: [%s]\n", str2, str3);
 	printf("c: \'c\' n: 10 after: [%s]\n\n", ft_memcpy(str2, str3, 10));
-	
+	free(str2);	
 }
 
-void	test_lib(void)
+static void	test_strdup(void)
+{
+	char *str = "J'aime les patates";
+	char *str2 = NULL;
+
+	printf("STRDUP\n");
+	str2 = ft_strdup(str);
+	printf("str: [%s] | new [%s]\n", str, (str2 = ft_strdup(str)));
+	free(str2);
+}
+
+static void	test_lib(void)
 {
 	test_bzero(); //CHECK NULL
 	test_strcat(); //CHECK NULL
+	test_strcpy();
 	test_isalpha();
 	test_isdigit();
 	test_isalnum();
@@ -196,9 +231,28 @@ void	test_lib(void)
 	test_tolower();
 	test_strlen();
 	test_puts();
+	test_putstr();
 	test_memset();
 	test_memcpy();
+	test_strdup();
 }
+
+/*
+static void	test_cat(const char *path)
+{
+	int fd;
+	
+	if (!strcmp(path, "0"))
+		fd = 0;
+	else if ((fd = open(path, O_RDONLY)) == -1)
+	{
+		perror("libftasm: cat:");
+		return ;
+	}
+	ft_cat(fd);
+	close(fd);
+}
+*/
 
 int		main(int ac, char **av)
 {
@@ -207,5 +261,6 @@ int		main(int ac, char **av)
 //	if (ac > 1)
 //		test_cat(av[1]);
 	test_lib();
+ 
 	return (0);
 }

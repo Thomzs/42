@@ -16,6 +16,7 @@ INCLUDE = tests/libfts.h
 
 S_FILES = ft_bzero.s \
 		  ft_strcat.s \
+		  ft_strcpy.s \
 		  ft_isalpha.s \
 		  ft_isdigit.s \
 		  ft_isalnum.s \
@@ -27,8 +28,10 @@ S_FILES = ft_bzero.s \
 		  ft_tolower.s \
 		  ft_strlen.s \
 		  ft_puts.s	\
+		  ft_putstr.s \
 		  ft_memset.s \
-		  ft_memcpy.s 
+		  ft_memcpy.s \
+		  ft_strdup.s
 
 S_PATH = srcs
 
@@ -48,14 +51,14 @@ all: $(NAME)
 
 $(O_PATH)/%.o: $(S_PATH)/%.s
 	@mkdir -p $(O_PATH)
-	@nasm -f macho64 -o $@ $<
+	@nasm -g -f macho64 -o $@ $<
 
 $(NAME): $(OBJ)
 	@ar rc $(NAME) $(OBJ)
 	@ranlib $(NAME)
 
 test: $(NAME)
-	@gcc $(FLAGS) -I $(INCLUDE) $(C_FILES) $(NAME) -o asm
+	@gcc $(FLAGS) -g3 -I $(INCLUDE) $(C_FILES) $(NAME) -o asm
 
 clean: 
 	/bin/rm -fr $(O_PATH)

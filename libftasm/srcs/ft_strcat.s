@@ -13,12 +13,12 @@ go_end:
 	jmp go_end
 
 fill:
-	cmp [rsi], byte 0
-	je end
 	mov rdx, [rsi]
 	mov [rdi], rdx 
 	inc rsi
 	inc rdi
+	cmp [rsi], byte 0
+	je end
 	jmp fill
 
 end:
