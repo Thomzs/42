@@ -1,2 +1,0 @@
-A=$"ifconfig | grep "broadcast" | awk '{print $6}'"
-ping "${A}" > /dev/null | arp -a | grep "en0" | awk '{print $2}' | tr -d '(),'

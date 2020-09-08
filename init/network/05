@@ -1,1 +1,0 @@
-nslookup slash16.org | grep Address | awk 'NR==1{print $2}'
