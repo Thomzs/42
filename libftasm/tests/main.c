@@ -217,8 +217,8 @@ static void	test_strdup(void)
 
 static void	test_lib(void)
 {
-	test_bzero(); //CHECK NULL
-	test_strcat(); //CHECK NULL
+	test_bzero();
+	test_strcat();
 	test_strcpy();
 	test_isalpha();
 	test_isdigit();
@@ -237,7 +237,7 @@ static void	test_lib(void)
 	test_strdup();
 }
 
-/*
+
 static void	test_cat(const char *path)
 {
 	int fd;
@@ -252,15 +252,15 @@ static void	test_cat(const char *path)
 	ft_cat(fd);
 	close(fd);
 }
-*/
+
 
 int		main(int ac, char **av)
 {
 	(void)ac;
 	(void)av;	
-//	if (ac > 1)
-//		test_cat(av[1]);
-	test_lib();
- 
+	if (ac > 2 && !strcmp(av[1], "cat"))
+		test_cat(av[2]);
+	else
+		test_lib();
 	return (0);
 }

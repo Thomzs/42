@@ -3,6 +3,8 @@ global _ft_strcat
 section .text
 _ft_strcat:
 	push rdi
+	cmp rdi, 0
+	je end
 	cmp rsi, 0
 	je end
 

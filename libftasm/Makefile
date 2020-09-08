@@ -31,7 +31,8 @@ S_FILES = ft_bzero.s \
 		  ft_putstr.s \
 		  ft_memset.s \
 		  ft_memcpy.s \
-		  ft_strdup.s
+		  ft_strdup.s \
+		  ft_cat.s
 
 S_PATH = srcs
 
@@ -51,14 +52,14 @@ all: $(NAME)
 
 $(O_PATH)/%.o: $(S_PATH)/%.s
 	@mkdir -p $(O_PATH)
-	@nasm -g -f macho64 -o $@ $<
+	@nasm -f macho64 -o $@ $<
 
 $(NAME): $(OBJ)
 	@ar rc $(NAME) $(OBJ)
 	@ranlib $(NAME)
 
 test: $(NAME)
-	@gcc $(FLAGS) -g3 -I $(INCLUDE) $(C_FILES) $(NAME) -o asm
+	@gcc $(FLAGS) -I $(INCLUDE) $(C_FILES) $(NAME) -o asm
 
 clean: 
 	/bin/rm -fr $(O_PATH)
